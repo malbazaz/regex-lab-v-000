@@ -16,12 +16,16 @@ fiveletterword = text.scan(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
+<<<<<<< HEAD
 first_word_cap = text.match(/^[A-Z].+[\.!?]$/)
 if first_word_cap
   true
 else
   false
 end 
+=======
+first_word_cap = text.match(/^\p{Lu}\w+\p{P}\b/)
+>>>>>>> 5cc2d4c73eff98732da72ce8dba2a8835006d034
 end
 
 def valid_phone_number?(phone)
